@@ -1,0 +1,8 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-sage font-body text-bark min-h-screen;background-image:radial-gradient(#cfdcae 2px,transparent 2px);background-size:24px 24px}
+.btn{@apply bg-moss text-paper font-bold rounded-xl px-5 py-3 shadow-pix border-2 border-bark transition active:translate-y-1 active:shadow-none hover:brightness-110 focus-visible:outline focus-visible:outline-4 focus-visible:outline-apple}
+.btn2{@apply bg-paper text-bark}
+.card{@apply bg-cream border-2 border-bark rounded-2xl shadow-soft p-5}
+@keyframes pop{from{transform:scale(.9);opacity:0}to{transform:scale(1);opacity:1}}
+.pop{animation:pop .18s ease-out}
+@media (prefers-reduced-motion:reduce){.pop{animation:none}}
